@@ -481,7 +481,7 @@ function ariaOnDownloadComplete(gid: string, retry: number): void {
           dlDetails.isUploading = true;
           if (handleDisallowedFilename(dlDetails, filename)) {
             console.log(`${gid}: Completed. Filename: ${filename}. Starting upload.`);
-            ariaTools.uploadFile(dlDetails, file, size, driveUploadCompleteCallback);
+            // ariaTools.uploadFile(dlDetails, file, size, driveUploadCompleteCallback);
           } else {
             var reason = 'Upload failed. Blacklisted file name.';
             console.log(`${gid}: Blacklisted. Filename: ${filename}.`);
